@@ -7,9 +7,9 @@ puts "Exercise 4"
 puts "----------"
 
 # Your code goes here ...
-surrey = Store.create :id => 3, :name => 'Surrey', :annual_revenue => '224000', :mens_apparel => false, :womens_apparel => true
-whistler = Store.create :id => 4, :name => 'Whistler', :annual_revenue => '1900000', :mens_apparel => true, :womens_apparel => false
-yaletown = Store.create :id => 5, :name => 'Yaletown', :annual_revenue => '430000', :mens_apparel => true, :womens_apparel => true
+surrey = Store.create! :id => 3, :name => 'Surrey', :annual_revenue => '224000', :mens_apparel => false, :womens_apparel => true
+whistler = Store.create! :id => 4, :name => 'Whistler', :annual_revenue => '1900000', :mens_apparel => true, :womens_apparel => false
+yaletown = Store.create! :id => 5, :name => 'Yaletown', :annual_revenue => '430000', :mens_apparel => true, :womens_apparel => true
 
 
 @mens_stores = Store.where(mens_apparel: true, womens_apparel: false).find_each do |store|

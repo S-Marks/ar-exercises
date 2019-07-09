@@ -12,5 +12,5 @@ puts @store1.name
 puts @store2.name
 
 @store1.name = "Hot Topic"
-@store1.save
+@store1.save!
 puts @store1.name
